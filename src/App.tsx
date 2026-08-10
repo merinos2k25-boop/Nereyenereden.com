@@ -6,6 +6,8 @@ import { RouteSelector } from './components/RouteSelector';
 import { MapComponent } from './components/MapComponent';
 import { RouteSummaryCard } from './components/RouteSummaryCard';
 import { DistanceMatrixModal } from './components/DistanceMatrixModal';
+import { SEOContentAndFAQ } from './components/SEOContentAndFAQ';
+import { LegalModals, type LegalModalType } from './components/LegalModals';
 import { Footer } from './components/Footer';
 
 export const App: React.FC = () => {
@@ -24,6 +26,7 @@ export const App: React.FC = () => {
   const [routeResult, setRouteResult] = useState<RouteResult | null>(null);
   const [isLoadingRoute, setIsLoadingRoute] = useState<boolean>(false);
   const [isMatrixOpen, setIsMatrixOpen] = useState<boolean>(false);
+  const [activeLegalModal, setActiveLegalModal] = useState<LegalModalType>(null);
 
   useEffect(() => {
     let isSubscribed = true;
@@ -105,6 +108,9 @@ export const App: React.FC = () => {
             onFuelConsumptionChange={setFuelConsumption}
           />
         )}
+
+        {/* SEO Article & FAQ Component for Google AdSense Approval */}
+        <SEOContentAndFAQ />
       </main>
 
       <DistanceMatrixModal
@@ -114,7 +120,12 @@ export const App: React.FC = () => {
         onSelectRoute={handleSelectRouteFromMatrix}
       />
 
-      <Footer />
+      <LegalModals
+        activeModal={activeLegalModal}
+        onClose={() => setActiveLegalModal(null)}
+      />
+
+      <Footer onOpenLegalModal={(type) => setActiveLegalModal(type)} />
     </div>
   );
 };
