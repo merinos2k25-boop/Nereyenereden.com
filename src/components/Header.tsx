@@ -13,7 +13,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenMatrix }) => {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
         <div className="flex flex-col items-center text-center">
-          
+
           {/* Top Pill Badge */}
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs sm:text-sm font-medium mb-3 shadow-inner">
             <Sparkles className="w-3.5 h-3.5 animate-pulse text-cyan-400" />
@@ -27,13 +27,13 @@ export const Header: React.FC<HeaderProps> = ({ onOpenMatrix }) => {
               <Navigation className="w-8 h-8 sm:w-10 sm:h-10 text-white transform -rotate-45" />
             </div>
             <h1 className="text-4xl sm:text-6xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-white via-slate-100 to-blue-200 drop-shadow-sm">
-              Nereden Nereye
+              Nereye Nereden
             </h1>
           </div>
 
           {/* Subtitle */}
           <p className="mt-2 text-sm sm:text-base text-slate-400 max-w-2xl font-normal leading-relaxed">
-            Türkiye'nin tüm 81 ili ve etrafındaki komşu ülkeler arasında gerçekçi harita rotası, 
+            Türkiye'nin tüm 81 ili ve etrafındaki komşu ülkeler arasında gerçekçi harita rotası,
             karayolu mesafesi, tahmini seyahat süresi ve yakıt hesabı yapın.
           </p>
 
