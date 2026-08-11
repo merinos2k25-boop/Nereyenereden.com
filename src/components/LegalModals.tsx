@@ -14,7 +14,7 @@ export const LegalModals: React.FC<LegalModalsProps> = ({ activeModal, onClose }
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-slate-950/80 backdrop-blur-md overflow-y-auto">
       <div className="glass-panel w-full max-w-3xl rounded-3xl p-6 sm:p-8 shadow-2xl border border-white/10 relative max-h-[85vh] flex flex-col text-xs sm:text-sm text-slate-300">
-        
+
         {/* Header */}
         <div className="flex items-center justify-between pb-4 border-b border-slate-800 shrink-0">
           <div className="flex items-center gap-3">
@@ -43,7 +43,7 @@ export const LegalModals: React.FC<LegalModalsProps> = ({ activeModal, onClose }
           {activeModal === 'privacy' && (
             <>
               <p>
-                <strong>Nereden Nereye</strong> olarak gizliliğinize büyük önem veriyoruz. Bu Gizlilik Politikası, sitemizi ziyaret ettiğinizde toplanan bilgilerin türlerini ve nasıl kullanıldığını açıklar.
+                <strong>Nereye Nereden</strong> olarak gizliliğinize büyük önem veriyoruz. Bu Gizlilik Politikası, sitemizi ziyaret ettiğinizde toplanan bilgilerin türlerini ve nasıl kullanıldığını açıklar.
               </p>
 
               <h3 className="font-bold text-white text-base mt-3">1. Çerezler (Cookies) ve Google AdSense</h3>
@@ -69,7 +69,7 @@ export const LegalModals: React.FC<LegalModalsProps> = ({ activeModal, onClose }
           {activeModal === 'terms' && (
             <>
               <p>
-                <strong>Nereden Nereye</strong> web platformuna hoş geldiniz. Bu siteyi kullanarak aşağıdaki kullanım koşullarını kabul etmiş olursunuz.
+                <strong>Nereye Nereden</strong> web platformuna hoş geldiniz. Bu siteyi kullanarak aşağıdaki kullanım koşullarını kabul etmiş olursunuz.
               </p>
 
               <h3 className="font-bold text-white text-base mt-3">1. Hizmet Amacı</h3>
@@ -92,13 +92,13 @@ export const LegalModals: React.FC<LegalModalsProps> = ({ activeModal, onClose }
           {activeModal === 'contact' && (
             <>
               <p>
-                <strong>Nereden Nereye</strong>, Türkiye ve komşu ülkeler arasındaki mesafe ve rota planlamasını sürücüler ve seyahat severler için en kolay ve şeffaf hale getirmek amacıyla geliştirilmiştir.
+                <strong>Nereye</strong>, Türkiye ve komşu ülkeler arasındaki mesafe ve rota planlamasını sürücüler ve seyahat severler için en kolay ve şeffaf hale getirmek amacıyla geliştirilmiştir.
               </p>
 
               <div className="p-4 rounded-2xl bg-slate-900 border border-slate-800 space-y-2 mt-3">
                 <div className="font-bold text-white">📧 İletişim & Geri Bildirim:</div>
                 <div className="text-slate-300">Görüş, öneri veya reklam iş birlikleri için bize ulaşabilirsiniz:</div>
-                <div className="font-mono text-blue-400 font-bold">iletisim@neredennereye.com</div>
+                <div className="font-mono text-blue-400 font-bold">iletisim@nereyenereden.com</div>
               </div>
             </>
           )}

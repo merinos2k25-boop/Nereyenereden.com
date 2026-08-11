@@ -29,7 +29,7 @@ export const SEOContentAndFAQ: React.FC = () => {
 
   return (
     <section className="mt-12 space-y-8">
-      
+
       {/* SEO Information Article Panel */}
       <div className="glass-panel rounded-3xl p-6 sm:p-8 border border-white/10">
         <div className="flex items-center gap-2 text-xs font-bold text-blue-400 uppercase tracking-widest mb-3">
@@ -41,7 +41,7 @@ export const SEOContentAndFAQ: React.FC = () => {
         </h2>
         <div className="text-slate-300 text-xs sm:text-sm leading-relaxed space-y-3">
           <p>
-            <strong>Nereden Nereye</strong>, seyahat planlayan sürücüler, yolcular, lojistik firmaları ve gezginler için tasarlanmış gelişmiş bir rota ve seyahat analiz platformudur. Türkiye'nin Adana'dan Zonguldak'a kadar tüm 81 ili ile komşu coğrafyamızdaki Atina, Sofya, Tiflis, Bakü, Tebriz, Erbil ve Lefkoşa gibi 30'u aşkın dünya şehri arasında anlık karayolu mesafesi hesaplayabilirsiniz.
+            <strong>Nereye Nereden</strong>, seyahat planlayan sürücüler, yolcular, lojistik firmaları ve gezginler için tasarlanmış gelişmiş bir rota ve seyahat analiz platformudur. Türkiye'nin Adana'dan Zonguldak'a kadar tüm 81 ili ile komşu coğrafyamızdaki Atina, Sofya, Tiflis, Bakü, Tebriz, Erbil ve Lefkoşa gibi 30'u aşkın dünya şehri arasında anlık karayolu mesafesi hesaplayabilirsiniz.
           </p>
           <p>
             Platformumuz sadece km mesafesini değil; otomobil, otobüs, uçak, tren ve yürüyüş gibi farklı seyahat modlarına göre tahmini varış sürelerini, araç yakıt harcamasını (litre ve ₺) ve çevreye salınan karbon ayak izini (CO2 kg) ayrıntılı olarak raporlar.
@@ -100,9 +100,8 @@ export const SEOContentAndFAQ: React.FC = () => {
                 >
                   <span>{faq.q}</span>
                   <ChevronDown
-                    className={`w-4 h-4 text-slate-400 transition-transform duration-200 shrink-0 ml-2 ${
-                      isOpen ? 'rotate-180 text-blue-400' : ''
-                    }`}
+                    className={`w-4 h-4 text-slate-400 transition-transform duration-200 shrink-0 ml-2 ${isOpen ? 'rotate-180 text-blue-400' : ''
+                      }`}
                   />
                 </button>
                 {isOpen && (
