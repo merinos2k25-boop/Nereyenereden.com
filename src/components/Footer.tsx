@@ -16,7 +16,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenLegalModal }) => {
               <Navigation className="w-4 h-4 text-white transform -rotate-45" />
             </div>
             <div>
-              <span className="text-white font-black text-base">Nereden Nereye</span>
+              <span className="text-white font-black text-base">Nereye Nereden</span>
               <p className="text-slate-500 text-[11px]">Türkiye & Komşu Ülkeler Mesafe ve Rota Platformu</p>
             </div>
           </div>
@@ -46,7 +46,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenLegalModal }) => {
           </div>
 
           <div className="flex flex-col sm:flex-row items-center gap-4 text-slate-500">
-            <div>© {new Date().getFullYear()} Nereden Nereye</div>
+            <div>© {new Date().getFullYear()} Nereye Nereden</div>
             <div className="hidden sm:inline">•</div>
             <div className="flex items-center gap-1 text-slate-400">
               <span>Hassas GPS verileriyle üretildi</span>
